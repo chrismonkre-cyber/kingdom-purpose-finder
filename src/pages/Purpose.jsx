@@ -74,37 +74,37 @@ export default function Purpose() {
         <h1 className="font-heading text-3xl md:text-4xl text-yellow-300 text-center font-bold mb-2" style={{ textShadow: "0 0 25px rgba(212,175,55,0.5)" }}>
           Purpose Categories
         </h1>
-        <p className="font-body text-yellow-100/70 text-center text-sm mb-8">Explore each area of Kingdom purpose</p>
+        <p className="font-body text-yellow-200 text-center text-sm mb-8">Explore each area of Kingdom purpose</p>
 
         <div className="space-y-3">
           {CATEGORIES.map((cat, i) => {
             const isOpen = openIndex === i;
             return (
-              <div key={i} className="rounded-xl overflow-hidden border border-yellow-600/30 bg-red-950/30 backdrop-blur-md">
+              <div key={i} className="rounded-xl overflow-hidden border border-yellow-600/50 bg-red-950/55 backdrop-blur-md shadow-xl shadow-black/40">
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-yellow-600/10 transition-all"
                 >
-                  <span className="font-heading text-yellow-300 text-base md:text-lg font-bold">{cat.title}</span>
+                  <span className="font-heading text-yellow-200 text-base md:text-lg font-bold" style={{ textShadow: '0 0 12px rgba(212,175,55,0.5)' }}>{cat.title}</span>
                   <ChevronDown className={`w-5 h-5 text-yellow-400 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
                 </button>
                 {isOpen && (
                   <div className="px-5 pb-5 space-y-4 animate-in fade-in duration-300">
                     <div>
-                      <h4 className="font-heading text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1">Scripture</h4>
-                      <p className="font-body text-yellow-100/90 text-sm italic">{cat.scripture}</p>
+                      <h4 className="font-heading text-yellow-300 text-xs font-bold tracking-wider uppercase mb-1" style={{ textShadow: '0 0 8px rgba(212,175,55,0.6)' }}>Scripture</h4>
+                      <p className="font-body text-white text-sm italic" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>{cat.scripture}</p>
                     </div>
                     <div>
-                      <h4 className="font-heading text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1">Encouragement</h4>
-                      <p className="font-body text-yellow-100/85 text-sm leading-relaxed">{cat.encouragement}</p>
+                      <h4 className="font-heading text-yellow-300 text-xs font-bold tracking-wider uppercase mb-1" style={{ textShadow: '0 0 8px rgba(212,175,55,0.6)' }}>Encouragement</h4>
+                      <p className="font-body text-white text-sm leading-relaxed" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>{cat.encouragement}</p>
                     </div>
                     <div>
-                      <h4 className="font-heading text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1">Declaration</h4>
-                      <p className="font-body text-yellow-200 text-sm font-semibold">{cat.declaration}</p>
+                      <h4 className="font-heading text-yellow-300 text-xs font-bold tracking-wider uppercase mb-1" style={{ textShadow: '0 0 8px rgba(212,175,55,0.6)' }}>Declaration</h4>
+                      <p className="font-body text-yellow-200 text-sm font-semibold" style={{ textShadow: '0 0 10px rgba(212,175,55,0.4), 0 1px 3px rgba(0,0,0,0.8)' }}>{cat.declaration}</p>
                     </div>
                     <div>
-                      <h4 className="font-heading text-yellow-400 text-xs font-bold tracking-wider uppercase mb-1">Next Step</h4>
-                      <p className="font-body text-yellow-100/85 text-sm">{cat.nextStep}</p>
+                      <h4 className="font-heading text-yellow-300 text-xs font-bold tracking-wider uppercase mb-1" style={{ textShadow: '0 0 8px rgba(212,175,55,0.6)' }}>Next Step</h4>
+                      <p className="font-body text-white text-sm" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}>{cat.nextStep}</p>
                     </div>
                   </div>
                 )}

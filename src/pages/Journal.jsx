@@ -56,7 +56,7 @@ export default function Journal() {
         <h1 className="font-heading text-3xl md:text-4xl text-yellow-300 text-center font-bold mb-2" style={{ textShadow: "0 0 25px rgba(212,175,55,0.5)" }}>
           Purpose Journal
         </h1>
-        <p className="font-body text-yellow-100/70 text-center text-sm mb-8">Record what God is speaking to your heart</p>
+        <p className="font-body text-yellow-200 text-center text-sm mb-8">Record what God is speaking to your heart</p>
 
         {/* Toggle */}
         <div className="flex justify-center gap-3 mb-8">
@@ -120,19 +120,19 @@ export default function Journal() {
           <div className="space-y-3">
             {entries.length === 0 ? (
               <GlassCard className="text-center">
-                <p className="font-body text-yellow-100/60 text-sm">No journal entries yet. Start writing to capture what God is speaking.</p>
+                <p className="font-body text-yellow-100 text-sm">No journal entries yet. Start writing to capture what God is speaking.</p>
               </GlassCard>
             ) : (
               entries.map((entry) => (
                 <GlassCard key={entry.id}>
                   <div className="flex justify-between items-start mb-2">
-                    <span className="font-body text-yellow-400/70 text-xs">{entry.date}</span>
+                    <span className="font-body text-yellow-300 text-xs">{entry.date}</span>
                     <button onClick={() => deleteEntry(entry.id)} className="text-red-400/60 hover:text-red-400 transition-colors">
                       <Trash2 className="w-4 h-4" />
                     </button>
                   </div>
-                  {entry.prompt && <p className="font-body text-yellow-300/80 text-xs italic mb-2">{entry.prompt}</p>}
-                  <p className="font-body text-yellow-100/85 text-sm leading-relaxed whitespace-pre-wrap">{entry.text}</p>
+                  {entry.prompt && <p className="font-body text-yellow-300 text-xs italic mb-2">{entry.prompt}</p>}
+                  <p className="font-body text-yellow-100 text-sm leading-relaxed whitespace-pre-wrap">{entry.text}</p>
                 </GlassCard>
               ))
             )}

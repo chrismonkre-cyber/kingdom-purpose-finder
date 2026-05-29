@@ -87,7 +87,7 @@ export default function Daily() {
         <h1 className="font-heading text-3xl md:text-4xl text-yellow-300 text-center font-bold mb-2" style={{ textShadow: "0 0 25px rgba(212,175,55,0.5)" }}>
           Daily Purpose Step
         </h1>
-        <p className="font-body text-yellow-100/70 text-center text-sm mb-8">Day {current + 1} of 7</p>
+        <p className="font-body text-yellow-200 text-center text-sm mb-8">Day {current + 1} of 7</p>
 
         <div className="flex items-center justify-between mb-6">
           <button onClick={prev} className="p-2 rounded-full bg-black/30 text-yellow-300 hover:bg-black/50 transition-all">
@@ -104,15 +104,15 @@ export default function Daily() {
         <div className="space-y-4">
           <GlassCard>
             <h3 className="font-heading text-yellow-400 text-sm font-bold mb-2 tracking-wider uppercase">Scripture</h3>
-            <p className="font-body text-yellow-100/90 text-sm italic leading-relaxed">{day.scripture}</p>
+            <p className="font-body text-yellow-100 text-sm italic leading-relaxed">{day.scripture}</p>
           </GlassCard>
           <GlassCard>
             <h3 className="font-heading text-yellow-400 text-sm font-bold mb-2 tracking-wider uppercase">Encouragement</h3>
-            <p className="font-body text-yellow-100/85 text-sm leading-relaxed">{day.encouragement}</p>
+            <p className="font-body text-yellow-100 text-sm leading-relaxed">{day.encouragement}</p>
           </GlassCard>
           <GlassCard>
             <h3 className="font-heading text-yellow-400 text-sm font-bold mb-2 tracking-wider uppercase">Prayer</h3>
-            <p className="font-body text-yellow-100/85 text-sm leading-relaxed">{day.prayer}</p>
+            <p className="font-body text-yellow-100 text-sm leading-relaxed">{day.prayer}</p>
           </GlassCard>
           <GlassCard>
             <h3 className="font-heading text-yellow-400 text-sm font-bold mb-2 tracking-wider uppercase">Declaration</h3>
@@ -120,11 +120,11 @@ export default function Daily() {
           </GlassCard>
           <GlassCard>
             <h3 className="font-heading text-yellow-400 text-sm font-bold mb-2 tracking-wider uppercase">Action Step</h3>
-            <p className="font-body text-yellow-100/85 text-sm leading-relaxed">{day.action}</p>
+            <p className="font-body text-yellow-100 text-sm leading-relaxed">{day.action}</p>
           </GlassCard>
           <GlassCard>
             <h3 className="font-heading text-yellow-400 text-sm font-bold mb-2 tracking-wider uppercase">Reflection / Journal Prompt</h3>
-            <p className="font-body text-yellow-100/85 text-sm leading-relaxed italic">{day.reflection}</p>
+            <p className="font-body text-yellow-100 text-sm leading-relaxed italic">{day.reflection}</p>
           </GlassCard>
         </div>
       </div>

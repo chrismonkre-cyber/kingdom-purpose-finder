@@ -15,7 +15,7 @@ export default function Header() {
   const location = useLocation();
 
   return (
-    <header className="relative z-50 flex items-center justify-between px-4 md:px-8 py-3 bg-black/30 backdrop-blur-md border-b border-yellow-600/30">
+    <header className="relative z-50 flex items-center justify-between px-4 md:px-8 py-3 bg-black/50 backdrop-blur-md border-b border-yellow-600/40">
       <Link to="/" className="flex items-center gap-3">
         <img src={LOGO} alt="Kingdom Mandate Ministry" className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover" />
         <span className="font-heading text-yellow-300 text-sm md:text-base font-bold tracking-wide hidden sm:block" style={{ textShadow: "0 0 12px rgba(212,175,55,0.5)" }}>
@@ -29,8 +29,8 @@ export default function Header() {
             to={link.to}
             className={`px-3 py-2 rounded-lg text-sm font-heading tracking-wide transition-all duration-200 ${
               location.pathname === link.to
-                ? "text-yellow-300 bg-yellow-600/20 border border-yellow-500/30"
-                : "text-yellow-100/80 hover:text-yellow-300 hover:bg-yellow-600/10"
+                ? "text-yellow-200 bg-yellow-600/25 border border-yellow-400/50 font-bold drop-shadow-[0_0_6px_rgba(212,175,55,0.7)]"
+                : "text-yellow-100 hover:text-yellow-200 hover:bg-yellow-600/15 font-medium"
             }`}
           >
             {link.label}

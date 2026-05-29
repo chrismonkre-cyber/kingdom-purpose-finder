@@ -14,7 +14,7 @@ export default function MobileNav() {
   const location = useLocation();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-black/60 backdrop-blur-xl border-t border-yellow-600/30">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-black/70 backdrop-blur-xl border-t border-yellow-600/40">
       <div className="flex justify-around items-center py-2 px-1">
         {NAV_ITEMS.map((item) => {
           const active = location.pathname === item.to;
@@ -26,7 +26,7 @@ export default function MobileNav() {
               className={`flex flex-col items-center gap-0.5 px-2 py-1 rounded-lg transition-all ${
                 active
                   ? "text-yellow-300"
-                  : "text-yellow-100/60 hover:text-yellow-200"
+                  : "text-yellow-200/90 hover:text-yellow-300"
               }`}
             >
               <Icon className={`w-5 h-5 ${active ? "drop-shadow-[0_0_6px_rgba(212,175,55,0.7)]" : ""}`} />

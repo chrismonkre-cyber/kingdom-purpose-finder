@@ -29,7 +29,7 @@ export default function Home() {
           <p className="font-heading text-lg md:text-xl text-yellow-200/90 mb-4" style={{ textShadow: "0 0 10px rgba(212,175,55,0.3)" }}>
             Discover your calling. Walk in purpose. Advance the Kingdom.
           </p>
-          <p className="font-body text-yellow-100/80 max-w-2xl mx-auto text-sm md:text-base leading-relaxed mb-10">
+          <p className="font-body text-yellow-100 max-w-2xl mx-auto text-sm md:text-base leading-relaxed mb-10">
             A Spirit-filled companion to help you discover your God-given calling, strengthen your identity in Christ, and take practical steps into your Kingdom assignment.
           </p>
 
@@ -59,7 +59,7 @@ export default function Home() {
           <h2 className="font-heading text-2xl md:text-3xl text-yellow-300 text-center font-bold mb-4" style={{ textShadow: "0 0 20px rgba(212,175,55,0.5)" }}>
             Why Purpose Matters
           </h2>
-          <p className="font-body text-yellow-100/80 text-center max-w-2xl mx-auto text-sm md:text-base mb-10 leading-relaxed">
+          <p className="font-body text-yellow-100 text-center max-w-2xl mx-auto text-sm md:text-base mb-10 leading-relaxed">
             You were not created by accident. God formed you with intention, calling, gifts, and assignment. Purpose is not merely what you do — it is who God made you to be and how you walk that out for His glory.
           </p>
 
@@ -68,7 +68,7 @@ export default function Home() {
               <GlassCard key={f.title} className="text-center">
                 <f.icon className="w-10 h-10 text-yellow-400 mx-auto mb-3 drop-shadow-[0_0_8px_rgba(212,175,55,0.5)]" />
                 <h3 className="font-heading text-yellow-300 text-lg font-bold mb-2">{f.title}</h3>
-                <p className="font-body text-yellow-100/80 text-sm">{f.desc}</p>
+                <p className="font-body text-yellow-100 text-sm">{f.desc}</p>
               </GlassCard>
             ))}
           </div>
