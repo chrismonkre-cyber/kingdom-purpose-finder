@@ -35,11 +35,12 @@ export default function Resources() {
           Kingdom Resources
         </h1>
         <p
-  className="font-body text-white text-center text-base md:text-lg font-semibold mb-8"
-  style={{ textShadow: "0 2px 8px rgba(0,0,0,0.95)" }}
+  <p
+  className="font-body text-white text-center text-base md:text-lg font-semibold max-w-2xl mx-auto mb-8 px-4 py-2 rounded-xl bg-black/40"
+  style={{ textShadow: "0 2px 6px rgba(0,0,0,1)" }}
 >
-          Explore the full Kingdom Mandate Ministry ecosystem
-        </p>
+  Explore the full Kingdom Mandate Ministry ecosystem
+</p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
           {RESOURCES.map((r) => (
