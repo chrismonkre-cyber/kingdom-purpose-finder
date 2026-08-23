@@ -53,22 +53,26 @@ export default function Journal() {
     <PageBackground webImage={IMAGES.journal.web} mobileImage={IMAGES.journal.mobile}>
       <div className="max-w-3xl mx-auto px-4 pb-24 md:pb-8">
         <LogoBanner />
-        <h1 className="font-heading text-3xl md:text-4xl text-yellow-300 text-center font-bold mb-2" style={{ textShadow: "0 0 25px rgba(212,175,55,0.5)" }}>
+        <h1 className="font-heading text-3xl md:text-4xl text-yellow-300 text-center font-bold mb-2"
+  style={{ textShadow: "0 3px 8px rgba(0,0,0,0.95)" }}>
           Purpose Journal
         </h1>
-        <p className="font-body text-yellow-200 text-center text-sm mb-8">Record what God is speaking to your heart</p>
+        <p
+  className="font-body text-white text-center text-base font-semibold mb-8"
+  style={{ textShadow: "0 2px 8px rgba(0,0,0,0.95)" }}
+>Record what God is speaking to your heart</p>
 
         {/* Toggle */}
         <div className="flex justify-center gap-3 mb-8">
           <button
             onClick={() => setShowSaved(false)}
-            className={`px-5 py-2 rounded-lg font-heading text-sm font-bold transition-all ${!showSaved ? "bg-yellow-600/30 text-yellow-300 border border-yellow-500/40" : "text-yellow-100/60 hover:text-yellow-300"}`}
+            className={`px-5 py-2 rounded-lg font-heading text-sm font-bold transition-all ${!showSaved ? "bg-black/45 text-yellow-300 border border-yellow-500/40" : "text-white hover:text-yellow-300"}`}
           >
             New Entry
           </button>
           <button
             onClick={() => setShowSaved(true)}
-            className={`px-5 py-2 rounded-lg font-heading text-sm font-bold transition-all flex items-center gap-2 ${showSaved ? "bg-yellow-600/30 text-yellow-300 border border-yellow-500/40" : "text-yellow-100/60 hover:text-yellow-300"}`}
+            className={`px-5 py-2 rounded-lg font-heading text-sm font-bold transition-all flex items-center gap-2 ${showSaved ? "bg-black/45 text-yellow-300 border border-yellow-500/40" : "text-white hover:text-yellow-300"}`}
           >
             <BookOpen className="w-4 h-4" /> Saved ({entries.length})
           </button>
