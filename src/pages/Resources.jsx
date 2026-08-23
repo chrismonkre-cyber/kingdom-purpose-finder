@@ -31,7 +31,7 @@ export default function Resources() {
     <PageBackground webImage={IMAGES.resources.web} mobileImage={IMAGES.resources.mobile}>
       <div className="max-w-5xl mx-auto px-4 pb-24 md:pb-8">
         <LogoBanner />
-        <h1 className="font-heading text-3xl md:text-4xl text-yellow-300 text-center font-bold mb-2" style={{ textShadow: "0 3px 8px rgba(0,0,0,0.95)" }}
+        <h1 className="font-heading text-3xl md:text-4xl text-yellow-300 text-center font-bold mb-2" style={{ textShadow: "0 3px 8px rgba(0,0,0,0.95)" }}>
           Kingdom Resources
         </h1>
        
