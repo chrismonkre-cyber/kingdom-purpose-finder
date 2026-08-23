@@ -34,7 +34,7 @@ export default function Resources() {
         <h1 className="font-heading text-3xl md:text-4xl text-yellow-300 text-center font-bold mb-2" style={{ textShadow: "0 3px 8px rgba(0,0,0,0.95)" }}
           Kingdom Resources
         </h1>
-        <p
+       
   <p
   className="font-body text-white text-center text-base md:text-lg font-semibold max-w-2xl mx-auto mb-8 px-4 py-2 rounded-xl bg-black/40"
   style={{ textShadow: "0 2px 6px rgba(0,0,0,1)" }}
