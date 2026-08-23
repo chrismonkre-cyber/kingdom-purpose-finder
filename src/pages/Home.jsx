@@ -15,7 +15,8 @@ const FEATURES = [
 export default function Home() {
   return (
     <PageBackground webImage={IMAGES.home.web} mobileImage={IMAGES.home.mobile}>
-      <div className="max-w-5xl mx-auto px-4 pb-24 md:pb-8">
+      <div className="fixed inset-0 bg-black/35 pointer-events-none z-0" />
+      <div className="relative z-10 max-w-5xl mx-auto px-4 pb-24 md:pb-8">
         <LogoBanner />
 
         {/* Hero */}
