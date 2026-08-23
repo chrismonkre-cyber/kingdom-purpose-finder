@@ -30,12 +30,12 @@ export default function About() {
     <PageBackground webImage={IMAGES.resources.web} mobileImage={IMAGES.resources.mobile}>
       <div className="max-w-3xl mx-auto px-4 pb-24 md:pb-8">
         <LogoBanner />
-        <h1 className="font-heading text-3xl md:text-4xl text-yellow-300 text-center font-bold mb-6" style={{ textShadow: "0 0 30px rgba(212,175,55,0.7), 0 2px 8px rgba(0,0,0,0.5)" }}>
+        <h1 className="font-heading text-3xl md:text-4xl text-yellow-300 text-center font-bold mb-6" style={{ textShadow: "0 3px 8px rgba(0,0,0,0.95)" }}>
           About Kingdom Purpose Finder
         </h1>
 
         <GlassCard className="mb-6">
-          <p className="font-body text-yellow-100 text-sm md:text-base leading-relaxed">
+          <p className="font-body text-white text-base md:text-lg leading-relaxed">
             Kingdom Purpose Finder exists to help believers discover their identity, gifts, calling, and Kingdom assignment through Scripture, prayer, reflection, and bold faith. This app is part of the Kingdom Mandate Ministry ecosystem — created to awaken the lion within and equip people to walk in Spirit-filled purpose.
           </p>
         </GlassCard>
@@ -44,7 +44,7 @@ export default function About() {
           <h2 className="font-heading text-yellow-300 text-xl font-bold mb-3" style={{ textShadow: "0 0 15px rgba(212,175,55,0.4)" }}>
             Our Mission
           </h2>
-          <p className="font-body text-yellow-100 text-sm md:text-base leading-relaxed">
+          <p className="font-body text-white text-base md:text-lg leading-relaxed">
             To help people move from uncertainty to clarity, from hesitation to obedience, and from hidden potential to Kingdom impact.
           </p>
         </GlassCard>
