@@ -27,10 +27,10 @@ export default function Home() {
           >
             Kingdom Purpose Finder
           </h1>
-          <p className="font-heading text-lg md:text-xl text-yellow-200/90 mb-4" style={{ textShadow: "0 0 10px rgba(212,175,55,0.3)" }}>
+          <p className="font-heading text-lg md:text-xl text-white font-semibold mb-4" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>
             Discover your calling. Walk in purpose. Advance the Kingdom.
           </p>
-          <p className="font-body text-yellow-100 max-w-2xl mx-auto text-sm md:text-base leading-relaxed mb-10">
+          <p className="font-body text-white max-w-2xl mx-auto text-base md:text-lg leading-relaxed mb-10" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.9)" }}>
             A Spirit-filled companion to help you discover your God-given calling, strengthen your identity in Christ, and take practical steps into your Kingdom assignment.
           </p>
 
